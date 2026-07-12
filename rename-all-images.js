@@ -1,0 +1,2 @@
+"const fs = require('fs');\nconst path = require('path');\n\nconst dir = path.join(__dirname, 'public', 'images');\nconst files = fs.readdirSync(dir);\n\nfiles.forEach(file => {\n  if (file.includes(' ')) {\n    const oldPath = path.join(dir, file);\n    c
+<truncated 181 bytes>

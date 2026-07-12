@@ -1,0 +1,2 @@
+"-- Clear existing products to ensure clean migration\nTRUNCATE TABLE products;\n\nINSERT INTO products (name, price, category, image_url, type)\nVALUES \n-- D-Cut Collection (Subpage)\n('Onyx Series D-Cut Tote', '$2.95', 'D-Cut Tote Bags', '/images/produc
+<truncated 1566 bytes>

@@ -1,0 +1,2 @@
+"-- Enable UUID extension\nCREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";\n\n-- Products Table\nCREATE TABLE IF NOT EXISTS products (\n  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),\n  name TEXT NOT NULL,\n  price TEXT NOT NULL,\n  category TEXT NOT NULL
+<truncated 2917 bytes>

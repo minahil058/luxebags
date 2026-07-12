@@ -1,0 +1,2 @@
+"-- TRUNCATE TABLE products; -- Uncomment this if you want to clear the table first\n\nINSERT INTO products (name, price, category, image_url, type)\nVALUES \n-- D-Cut Tote Bags\n('Premium D-Cut Retail Bag', '$1.25', 'D-Cut Tote Bags', '/images/bag1.jpeg',
+<truncated 1810 bytes>

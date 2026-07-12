@@ -1,0 +1,2 @@
+"-- Master Fix SQL for Image Paths\n-- This script synchronizes the database with the actual physical files in /public/images\n\n-- 1. Replace all spaces with hyphens (Physical files were renamed to use hyphens)\nUPDATE products SET image_url = replace(ima
+<truncated 1808 bytes>

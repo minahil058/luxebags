@@ -1,0 +1,90 @@
+Created At: 2026-05-31T15:29:23Z
+Completed At: 2026-05-31T15:29:23Z
+File Path: `file:///c:/Users/Mano/Desktop/bags-ecommerce/my-bag-store/app/product/%5Bid%5D/page.tsx`
+Total Lines: 625
+Total Bytes: 36473
+Showing lines 1 to 625
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: "use client";
+2: 
+3: import React, { useState, useEffect, useRef } from "react";
+4: import { Navbar } from "@/components/Navbar";
+5: import { Footer } from "@/components/Footer";
+6: import { motion, AnimatePresence } from "framer-motion";
+7: import { 
+8:   ChevronRight, ShoppingBag, Plus, Minus, 
+9:   CheckCircle2, HelpCircle, Award, Star, 
+10:   ShieldCheck, ArrowRight, Package, Info, AlertTriangle, X, Upload, 
+11:   FileText, Loader2, Feather, RefreshCw, Box, Sparkles, Paintbrush, 
+12:   Layers, DollarSign, Headset, Truck, Zap, Lock, Minus as MinusIcon, Plus as PlusIcon, 
+13:   MessageSquare, User, Quote
+14: } from "lucide-react";
+15: import { Button } from "@/components/ui/button";
+16: import { Input } from "@/components/ui/input";
+17: import { Label } from "@/components/ui/label";
+18: import { Textarea } from "@/components/ui/textarea";
+19: import { 
+20:   Dialog, 
+21:   DialogContent, 
+22:   DialogHeader, 
+23:   DialogTitle 
+24: } from "@/components/ui/dialog";
+25: import { useCartStore } from "@/store/useCartStore";
+26: import { supabase } from "@/lib/supabase";
+27: import { Product } from "@/types";
+28: import { useParams, useRouter } from "next/navigation";
+29: import Image from "next/image";
+30: import { toast } from "sonner";
+31: import { BestSellers } from "@/components/BestSellers";
+32: import Link from "next/link";
+33: import { getSmartSrc } from "@/lib/utils";
+34: import { CustomDesign } from "@/components/CustomDesign";
+35: import { RequestModal } from "@/components/RequestModal";
+36: 
+37: export de
+<truncated 35947 bytes>
+g-widest">Rating*</label>
+583:                <div className="flex items-center gap-2">
+584:                 {[1, 2, 3, 4, 5].map((star) => (
+585:                   <button 
+586:                     key={star} 
+587:                     type="button" 
+588:                     onClick={() => setNewReview({...newReview, rating: star})}
+589:                     className="focus:outline-none transition-transform hover:scale-110"
+590:                   >
+591:                     <Star 
+592:                       className={`w-6 h-6 ${star <= newReview.rating ? 'text-amber-500 fill-current' : 'text-zinc-200'}`} 
+593:                     />
+594:                   </button>
+595:                 ))}
+596:               </div>
+597:             </div>
+598:             
+599:             <div className="space-y-2">
+600:                <label className="text-xs font-bold text-zinc-500 uppercase tracking-widest">Your Feedback*</label>
+601:                <Textarea 
+602:                 required 
+603:                 value={newReview.reviewText} 
+604:                 onChange={(e) => setNewReview({...newReview, reviewText: e.target.value})} 
+605:                 placeholder="TELL US ABOUT YOUR EXPERIENCE..."
+606:                 className="bg-white border-zinc-200 min-h-[120px] rounded-lg text-sm"
+607:               />
+608:             </div>
+609:             
+610:             <Button 
+611:               type="submit" 
+612:               disabled={isSubmitting} 
+613:               className="w-full h-12 bg-zinc-900 text-white font-semibold uppercase tracking-[0.2em] text-xs hover:bg-black rounded-lg transition-all"
+614:             >
+615:                {isSubmitting ? <Loader2 className="h-5 w-5 animate-spin mx-auto" /> : "Submit Feedback"}
+616:             </Button>
+617:           </form>
+618:         </DialogContent>
+619:       </Dialog>
+620: 
+621:       <Footer />
+622:     </main>
+623:   );
+624: }
+625: 
+The above content shows the entire, complete file contents of the requested file.

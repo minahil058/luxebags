@@ -1,0 +1,2 @@
+"-- THE ULTIMATE SQL FIX\n-- This script synchronizes the database with the actual physical files in /public/images\n\n-- 1. Ensure all paths have spaces (not hyphens)\nUPDATE products SET image_url = replace(image_url, '-', ' ');\n\n-- 2. Correct extensio
+<truncated 3413 bytes>

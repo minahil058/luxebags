@@ -1,0 +1,2 @@
+"const fs = require('fs');\nconst path = require('path');\n\nconst dir = path.join(__dirname, 'public', 'images');\nconst files = fs.readdirSync(dir);\n\nfiles.forEach(file => {\n  if (file.includes('-')) {\n    // Only rename if it's one of our known pref
+<truncated 433 bytes>

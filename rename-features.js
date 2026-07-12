@@ -1,0 +1,2 @@
+"const fs = require('fs');\nconst path = require('path');\n\nconst dir = path.join(__dirname, 'public', 'images');\nconst files = fs.readdirSync(dir);\n\nfiles.forEach(file => {\n  if (file.startsWith('feature ') && file.endsWith('.jpeg')) {\n    const old
+<truncated 216 bytes>

@@ -1,0 +1,2 @@
+"const fs = require('fs');\nconst path = require('path');\n\nconst dir = path.join(__dirname, 'public', 'images');\nif (!fs.existsSync(dir)) {\n    console.error('Directory does not exist:', dir);\n    process.exit(1);\n}\n\nconst files = fs.readdirSync(di
+<truncated 661 bytes>
